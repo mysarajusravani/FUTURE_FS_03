@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elegant Boutique | Fashion & Style</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#FFF8F5;
+color:#444;
+}
+
+.navbar{
+background:#F8EDE7;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.navbar-brand{
+font-size:1.7rem;
+font-weight:bold;
+color:#A26769 !important;
+}
+
+.nav-link{
+font-weight:600;
+color:#555 !important;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(rgba(255,248,245,.6),rgba(255,248,245,.6)),
+url('https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600');
+background-size:cover;
+background-position:center;
+}
+
+.hero h1{
+font-size:4rem;
+font-weight:700;
+}
+
+.hero p{
+font-size:1.3rem;
+margin:20px 0;
+}
+
+.btn-custom{
+background:#D4A373;
+color:white;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+}
+
+.btn-custom:hover{
+background:#C38A57;
+color:white;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+font-weight:bold;
+color:#A26769;
+}
+
+.about-img{
+width:100%;
+border-radius:15px;
+height:450px;
+object-fit:cover;
+}
+
+.collection-card{
+border:none;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+cursor:pointer;
+transition:.4s;
+}
+
+.collection-card:hover{
+transform:translateY(-10px);
+}
+
+.collection-card img{
+height:350px;
+object-fit:cover;
+}
+
+.offer{
+background:#F5E6DA;
+padding:60px 20px;
+text-align:center;
+}
+
+.gallery img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:20px;
+}
+
+.contact-box{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+footer{
+background:#F8EDE7;
+padding:20px;
+text-align:center;
+margin-top:50px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+color:white;
+text-decoration:none;
+}
+
+.modal-body img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.4rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">Elegant Boutique</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#collections">Collections</a></li>
+<li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero" id="home">
+
+<div class="container">
+
+<h1>Fashion That Defines You</h1>
+
+<p>Exclusive Designer Wear, Sarees & Accessories</p>
+
+<a href="#collections" class="btn btn-custom">
+Explore Collections
+</a>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section class="py-5" id="about">
+
+<div class="container">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="row align-items-center">
+
+<div class="col-md-6">
+
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1000"
+class="about-img">
+
+</div>
+
+<div class="col-md-6">
+
+<h3>Welcome To Elegant Boutique</h3>
+
+<p>
+We specialize in premium women's fashion,
+designer sarees, bridal collections and
+fashion accessories that blend elegance
+with modern trends.
+</p>
+
+<p>
+Our boutique is dedicated to helping women
+look confident, stylish and beautiful for
+every occasion.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Collections -->
+
+<section class="py-5" id="collections">
+
+<div class="container">
+
+<h2 class="section-title">Our Collections</h2>
+
+<div class="row">
+
+<div class="col-md-4 mb-4">
+
+<div class="card collection-card"
+data-bs-toggle="modal"
+data-bs-target="#sareeModal">
+
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1000">
+
+<div class="card-body text-center">
+
+<h5>Designer Sarees</h5>
+
+<p>Traditional & Wedding Collections</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<div class="card collection-card"
+data-bs-toggle="modal"
+data-bs-target="#fashionModal">
+
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1000">
+
+<div class="card-body text-center">
+
+<h5>Women's Fashion</h5>
+
+<p>Latest Trendy Outfits</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+<div class="card collection-card"
+data-bs-toggle="modal"
+data-bs-target="#accessoryModal">
+
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1000">
+
+<div class="card-body text-center">
+
+<h5>Accessories</h5>
+
+<p>Jewellery & Handbags</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Offer -->
+
+<section class="offer">
+
+<h2>Festive Sale Offer</h2>
+
+<p>Get Up To 30% OFF On Selected Collections</p>
+
+<button class="btn btn-custom">
+Shop Now
+</button>
+
+</section>
+
+<!-- Gallery -->
+
+<section class="py-5 gallery" id="gallery">
+
+<div class="container">
+
+<h2 class="section-title">Gallery</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1000">
+</div>
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1000">
+</div>
+
+<div class="col-md-4">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1000">
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section class="py-5" id="contact">
+
+<div class="container">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<div class="contact-box">
+
+<h4>Store Details</h4>
+
+<p><i class="fa-solid fa-location-dot"></i> Vijayawada, Andhra Pradesh</p>
+
+<p><i class="fa-solid fa-phone"></i> +91 9876543210</p>
+
+<p><i class="fa-solid fa-envelope"></i> elegantboutique@gmail.com</p>
+
+</div>
+
+</div>
+
+<div class="col-md-6">
+
+<div class="contact-box">
+
+<form id="contactForm">
+
+<input type="text" class="form-control mb-3" placeholder="Your Name" required>
+
+<input type="email" class="form-control mb-3" placeholder="Email" required>
+
+<textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+
+<button class="btn btn-custom w-100">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Saree Modal -->
+
+<div class="modal fade" id="sareeModal">
+
+<div class="modal-dialog modal-lg">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h4>Designer Sarees Collection</h4>
+
+<button class="btn-close" data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=1000">
+
+<p>
+Explore premium silk sarees, bridal collections,
+party wear sarees and handcrafted embroidery designs.
+Perfect for weddings, festivals and special occasions.
+</p>
+
+<ul>
+<li>Bridal Sarees</li>
+<li>Silk Sarees</li>
+<li>Party Wear Sarees</li>
+<li>Handcrafted Collections</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Fashion Modal -->
+
+<div class="modal fade" id="fashionModal">
+
+<div class="modal-dialog modal-lg">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h4>Women's Fashion</h4>
+
+<button class="btn-close" data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1000">
+
+<p>
+Discover trendy dresses, kurtis, western wear,
+ethnic collections and seasonal fashion styles.
+</p>
+
+<ul>
+<li>Designer Dresses</li>
+<li>Kurtis</li>
+<li>Western Wear</li>
+<li>Party Collections</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Accessories Modal -->
+
+<div class="modal fade" id="accessoryModal">
+
+<div class="modal-dialog modal-lg">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h4>Fashion Accessories</h4>
+
+<button class="btn-close" data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=1000">
+
+<p>
+Complete your look with handbags, jewellery,
+watches and premium fashion accessories.
+</p>
+
+<ul>
+<li>Handbags</li>
+<li>Jewellery Sets</li>
+<li>Fashion Watches</li>
+<li>Hair Accessories</li>
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 Elegant Boutique | All Rights Reserved</p>
+
+</footer>
+
+<a href="https://wa.me/919876543210" class="whatsapp">
+<i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Thank You! Your message has been sent.");
+
+this.reset();
+
+});
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>   
