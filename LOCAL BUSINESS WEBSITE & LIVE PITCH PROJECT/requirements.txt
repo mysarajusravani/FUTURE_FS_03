@@ -1,1 +1,4 @@
-abc
+# No Python dependencies required
+# Frontend Libraries (loaded via CDN)
+Bootstrap==5.3.3
+Font-Awesome==6.5.2
